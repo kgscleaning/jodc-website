@@ -130,7 +130,7 @@ export default function Quote() {
                 </div>
               </div>
 
-              {/* Service Selection */}
+              {/* Service Selection */ }
               <div>
                 <h2 className="text-2xl font-bold tracking-tight text-gray-900">Service Details</h2>
                 <div className="mt-6">
