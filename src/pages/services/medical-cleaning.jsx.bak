@@ -1,0 +1,176 @@
+import Head from 'next/head';
+import Layout from '../../components/layout/Layout';
+import PageHero from '../../components/sections/PageHero';
+import CheckList from '../../components/common/CheckList';
+import Button from '../../components/common/Button';
+import Image from 'next/image';
+
+export default function MedicalCleaning() {
+  const services = [
+    'Hospital-grade disinfection protocols',
+    'Operating room terminal cleaning',
+    'Patient room sanitization',
+    'Exam room sterilization',
+    'Waiting area maintenance',
+    'Medical waste management',
+    'HEPA filtration',
+    'Specialized equipment cleaning',
+    'Cross-contamination prevention',
+    'Infection control measures'
+  ];
+
+  const standards = [
+    'Compliance with healthcare regulations',
+    'Adherence to OSHA standards',
+    'EPA-approved disinfectants',
+    'Strict contamination control',
+    'Regular staff training',
+    'Detailed cleaning documentation'
+  ];
+
+  const specifications = [
+    'Color-coded cleaning systems',
+    'Microfiber technology',
+    'Touch-point disinfection',
+    'Air quality management',
+    'Specialty floor care',
+    'Emergency response availability'
+  ];
+
+  return (
+    <Layout>
+      <Head>
+        <title>Medical Facility Cleaning Services | JO.DC Cleaning Inc.</title>
+        <meta
+          name="description"
+          content="Specialized medical facility cleaning services in GTA. Hospital-grade sanitization ensuring the highest standards of cleanliness and safety."
+        />
+        
+        {/* Open Graph */}
+        <meta property="og:title" content="Medical Facility Cleaning Services | JO.DC Cleaning Inc." />
+        <meta property="og:description" content="Specialized medical facility cleaning services in GTA. Hospital-grade sanitization ensuring the highest standards of cleanliness and safety." />
+        <meta property="og:type" content="website" />
+        <meta property="og:locale" content="en_CA" />
+        
+        {/* Additional SEO tags */}
+        <meta name="keywords" content="medical cleaning, healthcare facility cleaning, hospital cleaning service, GTA medical cleaning, Toronto healthcare cleaning" />
+      </Head>
+
+      <PageHero
+        title="Medical Facility Cleaning"
+        description="Specialized cleaning services for healthcare environments. We maintain the highest standards of cleanliness and safety for your medical facility."
+        imagePath="/images/heroes/hero-medical.png"
+        showContactInfo={true}
+      />
+
+      <section className="bg-white py-24 sm:py-32">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="mx-auto max-w-2xl lg:mx-0">
+            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+              Healthcare-Specific Cleaning Solutions
+            </h2>
+            <p className="mt-6 text-lg leading-8 text-gray-600">
+              We understand the critical nature of cleanliness in healthcare settings. Our specialized medical facility cleaning services are designed to meet and exceed industry standards for sanitization and safety.
+            </p>
+          </div>
+
+          <div className="mt-16 grid grid-cols-1 gap-y-16 lg:grid-cols-2 lg:gap-x-8">
+            <div>
+              <h3 className="text-2xl font-bold tracking-tight text-gray-900">
+                Comprehensive Services
+              </h3>
+              <CheckList items={services} />
+            </div>
+
+            <div className="relative h-[400px] overflow-hidden rounded-2xl">
+              <Image
+                src="/images/medical/medical-01.png"
+                alt="Medical facility cleaning service"
+                fill
+                className="object-cover"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-gradient-to-b from-gray-50 to-white py-24 sm:py-32">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="grid grid-cols-1 gap-y-16 lg:grid-cols-2 lg:gap-x-16">
+            <div className="relative h-[500px] overflow-hidden rounded-2xl">
+              <Image
+                src="/images/medical/medical-02.png"
+                alt="Medical grade cleaning equipment"
+                fill
+                className="object-cover"
+              />
+            </div>
+            
+            <div>
+              <h2 className="text-3xl font-bold tracking-tight text-gray-900">
+                Our Standards
+              </h2>
+              <p className="mt-6 text-lg leading-8 text-gray-600">
+                We maintain rigorous standards to ensure your facility meets all healthcare cleaning requirements and regulations.
+              </p>
+              <CheckList items={standards} />
+              
+              <div className="mt-12">
+                <h3 className="text-2xl font-bold tracking-tight text-gray-900">
+                  Technical Specifications
+                </h3>
+                <CheckList items={specifications} />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-primary/5 py-24 sm:py-32">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="grid grid-cols-1 gap-y-8 lg:grid-cols-3 lg:gap-x-16">
+            <div className="bg-white p-8 rounded-2xl shadow-sm">
+              <h3 className="text-xl font-bold text-gray-900">Infection Control</h3>
+              <p className="mt-4 text-gray-600">
+                Our protocols are designed to prevent the spread of infections and maintain a safe environment for patients and staff.
+              </p>
+            </div>
+            <div className="bg-white p-8 rounded-2xl shadow-sm">
+              <h3 className="text-xl font-bold text-gray-900">Compliance</h3>
+              <p className="mt-4 text-gray-600">
+                We stay up-to-date with all healthcare cleaning regulations and maintain detailed documentation of our services.
+              </p>
+            </div>
+            <div className="bg-white p-8 rounded-2xl shadow-sm">
+              <h3 className="text-xl font-bold text-gray-900">Availability</h3>
+              <p className="mt-4 text-gray-600">
+                Our team is available 24/7 for emergency cleaning services and can work around your facility's schedule.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-white py-24 sm:py-32">
+        <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="mx-auto max-w-2xl text-center">
+            <h2 className="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+              Ready to Elevate Your Facility's Cleanliness?
+            </h2>
+            <p className="mt-6 text-lg leading-8 text-gray-600">
+              Contact us to discuss your medical facility's specific cleaning requirements. We'll create a customized cleaning program that meets your needs and exceeds expectations.
+            </p>
+            <div className="mt-10 flex items-center justify-center gap-x-6">
+              <Button href="/quote" variant="solid">
+                Get a Free Quote
+              </Button>
+              <Button href="/contact" variant="outline">
+                Contact Us
+              </Button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </Layout>
+  );
+}
